@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <!-- Para que se vea bien en celulares -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>BitWall</title>
+
+  <!-- Fuentes de Google: Poppins (títulos) y Nunito (cuerpo) -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700;800&family=Nunito:wght@400;500;600;700&display=swap" rel="stylesheet" />
+
+  <!-- Archivo de estilos CSS separado -->
+  <link rel="stylesheet" href="styles.css" />
+</head>
+
+<body>
+
+  <!-- ==========================================
+       NAVBAR — barra de navegación superior
+       Copia este bloque en TODAS las páginas
+       ========================================== -->
+  <nav>
+    <!-- Logo -->
+    <a href="index.html" class="nav-logo"> 🛡️ <span>BitWall</span></a>
+
+    <!-- Botón para abrir el menú en celular -->
+    <button class="nav-toggle" onclick="toggleMenu()">☰</button>
+
+    <!-- Links del menú -->
+    <ul class="nav-links" id="navMenu">
+      <li><a href="index.html" class="active">Inicio</a></li>
+      <li><a href="seguridad.html">Seguridad</a></li>
+      <li><a href="etica.html">Ética Digital</a></li>
+      <li><a href="practicas.html">Buenas Prácticas</a></li>
+      <li><a href="caso.html">Caso Real</a></li>
+      <li><a href="multimedia.html">Multimedia</a></li>
+      <li><a href="contacto.html">Contacto</a></li>
+    </ul>
+  </nav>
+
+  <!-- ==========================================
+       HERO — sección principal de bienvenida
+       ========================================== -->
+  <header class="hero">
+    <div class="hero-content">
+
+      <!-- Título principal — cambia "DIGITAL" por el nombre que quieras -->
+      <h1>Seguridad y Ética en el<br>Mundo <em>Digital</em></h1>
+
+      <!-- Descripción corta -->
+      <p class="hero-sub">
+        Aprende a proteger tu información, navegar con responsabilidad
+        y actuar con ética en el mundo digital.
+      </p>
+
+      <!-- Botones de acción -->
+      <div class="hero-btns">
+      </div>
+    </div>
+  </header>
+
+  <!-- Línea divisora decorativa -->
+  <hr class="divisor" />
+  <!-- ==========================================
+       SECCIÓN DE TARJETAS — resumen del sitio
+       ========================================== -->
+  <section id="secciones">
+
+    <h2 class="titulo-seccion">Explora el <span>Sitio</span></h2>
+    <p class="desc-seccion">
+      Navega por cada sección y aprende todo lo que necesitas saber
+      sobre seguridad de la información y ética digital.
+    </p>
+
+    <!-- Grid con 6 tarjetas, una por página -->
+    <div class="cards-grid">
+
+      <!-- Tarjeta 1 -->
+      <a href="seguridad.html" class="card">
+        <h3>Seguridad de la Información</h3>
+        <p>Conoce los tipos de amenazas, ataques reales y cómo proteger
+           tus datos.</p>
+        <span class="card-link">Ver más </span>
+      </a>
+
+      <!-- Tarjeta 2 -->
+      <a href="etica.html" class="card">
+        <h3>Ética Digital</h3>
+        <p>Aprende sobre qué es la ética digital.</p>
+        <span class="card-link">Ver más </span>
+      </a>
+
+      <!-- Tarjeta 3 -->
+      <a href="practicas.html" class="card">
+        <h3>Buenas Prácticas</h3>
+        <p>Consejos para proteger tus datos, usar redes sociales de
+           forma segura y navegar responsablemente.</p>
+        <span class="card-link">Ver más </span>
+      </a>
+
+      <!-- Tarjeta 4 -->
+      <a href="caso.html" class="card">
+        <h3>Caso Práctico Real</h3>
+        <p>Análisis de un ciberataque real: qué ocurrió, quiénes
+           fueron afectados y qué aprendemos de él.</p>
+        <span class="card-link">Ver más </span>
+      </a>
+
+      <!-- Tarjeta 5 -->
+      <a href="multimedia.html" class="card">
+        <h3>Recursos Multimedia</h3>
+        <p>Videos, infografías y reforzamiento para complementar
+           tu aprendizaje sobre seguridad digital.</p>
+        <span class="card-link">Ver más </span>
+      </a>
+
+      <!-- Tarjeta 6 -->
+      <a href="contacto.html" class="card">
+        <h3>Contacto</h3>
+        <p>¿Tienes dudas o comentarios? Completa el formulario
+           y comparte tu opinión sobre el sitio.</p>
+        <span class="card-link">Ir al formulario </span>
+      </a>
+
+    </div>
+  </section>
+
+  <hr class="divisor" />
+
+  <!-- ==========================================
+       SECCIÓN: DATO IMPACTANTE + TIPS
+       ========================================== -->
+  <section id="tips">
+
+    <!-- Banner con dato llamativo -->
+    <div class="banner-info">
+      <span class="banner-icono">⚠️</span>
+      <div>
+        <p class="banner-titulo">¿Sabías esto?</p>
+        <p class="banner-texto">
+          Cada 39 segundos ocurre un ciberataque en el mundo. El 95% de las
+          fallas de seguridad son causadas por errores humanos.
+          <strong>La mejor defensa eres tú.</strong>
+        </p>
+      </div>
+    </div>
+
+    <!-- Tips rápidos -->
+    <span class="etiqueta">Tips Rápidos</span>
+    <h2 class="titulo-seccion">Empieza a <span>Protegerte</span> Hoy</h2>
+
+    <div class="tips-lista">
+      <div class="tip">
+        <span class="tip-num">1</span>
+        <span class="tip-texto">Usa contraseñas largas y diferentes para cada cuenta</span>
+      </div>
+      <div class="tip">
+        <span class="tip-num">2</span>
+        <span class="tip-texto">Activa la verificación en dos pasos en tus redes sociales</span>
+      </div>
+      <div class="tip">
+        <span class="tip-num">3</span>
+        <span class="tip-texto">No abras enlaces sospechosos por correo o WhatsApp</span>
+      </div>
+      <div class="tip">
+        <span class="tip-num">4</span>
+        <span class="tip-texto">Mantén actualizado tu sistema operativo y aplicaciones</span>
+      </div>
+      <div class="tip">
+        <span class="tip-num">5</span>
+        <span class="tip-texto">Piensa antes de publicar: tu huella digital es permanente</span>
+      </div>
+    </div>
+
+  </section>
+
+  <!-- ==========================================
+       FOOTER — pie de página
+       Copia este bloque en TODAS las páginas
+       ========================================== -->
+  <footer>
+    <p class="footer-logo">🛡️ <span>BitWall</span></p>
+
+    <p class="footer-copy">&copy; 2026 BitWall. </p>
+  </footer>
+
+  <!-- ==========================================
+       JAVASCRIPT — menú para celular
+       Copia este bloque en TODAS las páginas
+       ========================================== -->
+  <script>
+    // Abre o cierra el menú en pantallas pequeñas
+    function toggleMenu() {
+      document.getElementById('navMenu').classList.toggle('abierto');
+    }
+
+    // Cierra el menú al tocar un link
+    document.querySelectorAll('.nav-links a').forEach(function(link) {
+      link.addEventListener('click', function() {
+        document.getElementById('navMenu').classList.remove('abierto');
+      });
+    });
+  </script>
+
+</body>
+</html>

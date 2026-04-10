@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contacto</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700;800&family=Nunito:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+  
+</head>
+
+<body>
+
+  <!-- NAVBAR -->
+  <nav>
+    <a href="index.html" class="nav-logo">🛡️ <span>BitWall</span></a>
+    <button class="nav-toggle" onclick="toggleMenu()">☰</button>
+    <ul class="nav-links" id="navMenu">
+      <li><a href="index.html">Inicio</a></li>
+      <li><a href="seguridad.html">Seguridad</a></li>
+      <li><a href="etica.html">Ética Digital</a></li>
+      <li><a href="practicas.html">Buenas Prácticas</a></li>
+      <li><a href="caso.html">Caso Real</a></li>
+      <li><a href="multimedia.html">Multimedia</a></li>
+      <li><a href="contacto.html" class="active">Contacto</a></li>
+    </ul>
+  </nav>
+
+  <!-- HERO SECTION -->
+  <header class="hero">
+    <div class="hero-content">
+      <span class="hero-badge">💬 PONTE EN CONTACTO</span>
+      <h1>¿Tienes Dudas o <em>Sugerencias</em>?</h1>
+      <p class="hero-sub">
+        Nos encantaría escucharte. Completa el formulario o contáctanos
+        a través de nuestros canales de comunicación.
+      </p>
+    </div>
+  </header>
+
+  <hr class="divisor" />
+
+  <!-- SECCIÓN DE CONTACTO -->
+  <section id="contacto">
+    <h2 class="titulo-seccion">Ponte en <span>Contacto</span> con Nosotros</h2>
+
+    <div class="contacto-container">
+      <!-- FORMULARIO -->
+      <div class="formulario-contenedor">
+        <h3>Envíanos tu Mensaje</h3>
+        
+        <div id="mensajeExito" class="mensaje-exito">
+          ✓ ¡Gracias por tu mensaje! Nos pondremos en contacto pronto.
+        </div>
+
+        <form action="https://formspree.io/f/xeepbebw"
+  method="POST" id="formularioContacto">
+          <div class="form-group">
+            <label for="nombre">Nombre Completo *</label>
+            <input type="text" id="nombre" name="nombre" required placeholder="Tu nombre">
+          </div>
+
+          <div class="form-group">
+            <label for="email">Correo Electrónico *</label>
+            <input type="email" id="email" name="email" required placeholder="@gmail.com">
+          </div>
+
+          <div class="form-group">
+            <label for="telefono">Teléfono (Opcional)</label>
+            <input type="tel" id="telefono" name="telefono" placeholder="+507 0000-0000">
+          </div>
+
+          <div class="form-group">
+            <label for="asunto">Asunto *</label>
+            <select id="asunto" name="asunto" required>
+              <option value="">-- Selecciona un asunto --</option>
+              <option value="duda">Tengo una pregunta</option>
+              <option value="sugerencia">Sugerencia o mejora</option>
+              <option value="error">Reportar un error</option>
+              <option value="colaboracion">Propuesta de colaboración</option>
+              <option value="otro">Otro</option>
+            </select>
+          </div>
+
+          <div class="form-group">
+            <label for="mensaje">Mensaje *</label>
+            <textarea id="mensaje" name="mensaje" required placeholder="Cuéntanos qué necesitas..."></textarea>
+          </div>
+
+          <div class="form-group">
+            <div class="checkbox-group">
+              <div class="checkbox-item">
+                <input type="checkbox" id="privacidad" name="privacidad" required>
+                <label for="privacidad">Acepto la política de privacidad y términos de servicio</label>
+              </div>
+              <div class="checkbox-item">
+                <input type="checkbox" id="newsletter" name="newsletter">
+                <label for="newsletter">Deseo recibir actualizaciones y contenido educativo (opcional)</label>
+              </div>
+            </div>
+          </div>
+
+          <button type="submit" class="btn-enviar">Enviar Mensaje</button>
+        </form>
+
+        <div class="respuesta-rapida">
+          <h4>⏱️ Tiempo de Respuesta</h4>
+          <p>Respondemos a todos los mensajes en máximo 48 horas hábiles.
+             Si tu consulta es urgente, también puedes escribirnos por las redes sociales.</p>
+        </div>
+      </div>
+
+      <!-- INFORMACIÓN DE CONTACTO -->
+      <div class="info-contacto">
+        <h3>Otras Formas de Contactarnos</h3>
+
+        <div class="info-item">
+          <div class="info-icono">📧</div>
+          <div class="info-contenido">
+            <h3>Email</h3>
+            <p>bitwall@gmail.com</p>
+            <p style="font-size: 12px; margin-top: 5px;">Respuesta en 24-48 horas</p>
+          </div>
+        </div>
+
+        <div class="info-item">
+          <div class="info-icono">📍</div>
+          <div class="info-contenido">
+            <h3>Ubicación</h3>
+            <p>Panamá, Ciudad de Panamá</p>
+          </div>
+        </div>
+
+        <hr style="border: none; border-top: 2px solid #ddd; margin: 30px 0;">
+
+        <h3>Síguenos en Redes Sociales</h3>
+        <p style="color: #666; margin-bottom: 15px;">
+          Comparte contenido, participa en debates y mantente actualizado con nuestras publicaciones.
+        </p>
+
+        <div class="redes-sociales">
+          <img src="Imagenes_TICS/facebook_220200.png" <a href="#" class="red-social" title="Facebook"></a>
+          <a href="#" class="red-social" title="Twitter">𝕏</a>
+          <img src="Imagenes_TICS/pngtree-instagram-icon-instagram-logo-png-image_3571406.webp" <a href="#" class="red-social" title="Instagram"></a>
+          <img src="Imagenes_TICS/linkedin_1384046.png" <a href="#" class="red-social" title="LinkedIn"></a>
+        </div>
+
+        <div class="respuesta-rapida" style="margin-top: 30px;">
+          <h4>🤝 ¡Te Escuchamos!</h4>
+          <p>Tu feedback es invaluable para mejorar en BitWall. Ya sea una pregunta,
+             sugerencia o reporte de error, toda información nos ayuda a crecer.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <hr class="divisor" />  
+
+  <hr class="divisor" />
+
+  <!-- FOOTER -->
+  <footer>
+    <p class="footer-logo">🛡️ <span>BitWall</span></p>
+    <p class="footer-copy">
+      &copy; 2026 BitWall. 
+    </p>
+  </footer>
+
+  <script>
+    function toggleMenu() {
+      document.getElementById('navMenu').classList.toggle('abierto');
+    }
+    document.querySelectorAll('.nav-links a').forEach(function(link) {
+      link.addEventListener('click', function() {
+        document.getElementById('navMenu').classList.remove('abierto');
+      });
+    });
+
+    function enviarFormulario(event) {
+      event.preventDefault();
+      
+      // Obtener datos del formulario
+      const nombre = document.getElementById('nombre').value;
+      const email = document.getElementById('email').value;
+      const telefono = document.getElementById('telefono').value;
+      const asunto = document.getElementById('asunto').value;
+      const mensaje = document.getElementById('mensaje').value;
+      
+      // Validación básica
+      if (!nombre || !email || !asunto || !mensaje) {
+        alert('Por favor completa todos los campos requeridos (*)');
+        return;
+      }
+      
+      // Mostrar mensaje de éxito
+      document.getElementById('mensajeExito').classList.add('visible');
+      
+      // Limpiar formulario
+      document.getElementById('formularioContacto').reset();
+      
+      // Ocultar mensaje después de 5 segundos
+      setTimeout(function() {
+        document.getElementById('mensajeExito').classList.remove('visible');
+      }, 5000);
+      
+      // Aquí iría la lógica para enviar el email a un servidor
+      console.log('Formulario enviado:', {nombre, email, telefono, asunto, mensaje});
+    }
+  </script>
+</body>
+
+</html>

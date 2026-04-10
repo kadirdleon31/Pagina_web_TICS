@@ -1,0 +1,399 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Buenas Prácticas</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700;800&family=Nunito:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+
+<body>
+
+  <!-- NAVBAR -->
+  <nav>
+    <a href="index.html" class="nav-logo">🛡️ <span>BitWall</span></a>
+    <button class="nav-toggle" onclick="toggleMenu()">☰</button>
+    <ul class="nav-links" id="navMenu">
+      <li><a href="index.html">Inicio</a></li>
+      <li><a href="seguridad.html">Seguridad</a></li>
+      <li><a href="etica.html">Ética Digital</a></li>
+      <li><a href="practicas.html" class="active">Buenas Prácticas</a></li>
+      <li><a href="caso.html">Caso Real</a></li>
+      <li><a href="multimedia.html">Multimedia</a></li>
+      <li><a href="contacto.html">Contacto</a></li>
+    </ul>
+  </nav>
+
+  <!-- HERO SECTION -->
+  <header class="hero">
+    <div class="hero-content">
+      <span class="hero-badge"> BUENAS PRÁCTICAS DIGITALES</span>
+      <h1>Desarrolla <em>Hábitos Seguros</em><br>y Responsables</h1>
+      <p class="hero-sub">
+        Aprende las mejores prácticas para mantener tu información segura,
+        actuar de forma responsable y convivir respetuosamente en internet.
+      </p>
+    </div>
+  </header>
+
+  <hr class="divisor" />
+
+  <!-- SECCIÓN 1: QUÉ SON LAS BUENAS PRÁCTICAS -->
+  <section id="que-son">
+    <span class="etiqueta">Fundamentos</span>
+
+      <div class="cards-info">
+        <div class="card-concepto">
+          <h4>🔐 Seguridad Personal</h4>
+          <p>Protege tus datos y dispositivos de ataques y robo.</p>
+        </div>
+        <div class="card-concepto">
+          <h4>Convivencia Online</h4>
+          <p>Interacción respetuosa y responsable con otros usuarios.</p>
+        </div>
+        <div class="card-concepto">
+          <h4> Productividad Sana</h4>
+          <p>Uso equilibrado de la tecnología sin afectar tu salud mental.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <hr class="divisor" />
+
+  <!-- SECCIÓN 2: BUENAS PRÁCTICAS DE CONTRASEÑAS -->
+  <section id="contrasenas">
+    <h2 class="titulo-seccion">Buenas Prácticas de <span>Contraseñas</span></h2>
+
+    <div class="amenazas-grid">
+      <div class="amenaza-card">
+        <span class="amenaza-icono"></span>
+        <h3>Contraseñas Fuertes</h3>
+        <p>Usa mínimo 12 caracteres con mayúsculas, minúsculas, números y símbolos.
+           Ejemplo: "Gato$2024Seguro!" es mucho mejor que "gato123".</p>
+      </div>
+
+      <div class="amenaza-card">
+        <span class="amenaza-icono"></span>
+        <h3>Evita Información Personal</h3>
+        <p>No uses fechas de nacimiento, nombres, números de teléfono
+           ni información fácil de adivinar en tus contraseñas.</p>
+      </div>
+
+      <div class="amenaza-card">
+        <span class="amenaza-icono"></span>
+        <h3>Una Contraseña por Cuenta</h3>
+        <p>Usa contraseñas distintas para cada cuenta importante (email, banco, redes).
+           Si una se compromete, las otras permanecen protegidas.</p>
+      </div>
+
+      <div class="amenaza-card">
+        <span class="amenaza-icono"></span>
+        <h3>Cambios Periódicos</h3>
+        <p>Cambia contraseñas cada 3-6 meses, especialmente en cuentas sensibles
+           como email, banca online o redes sociales.</p>
+      </div>
+
+      <div class="amenaza-card">
+        <span class="amenaza-icono"></span>
+        <h3>Gestor de Contraseñas</h3>
+        <p>Usa aplicaciones como LastPass, Bitwarden o 1Password
+           para guardar y generar contraseñas seguras de forma automática.</p>
+      </div>
+
+      <div class="amenaza-card">
+        <span class="amenaza-icono"></span>
+        <h3>Autenticación de Dos Factores (2FA)</h3>
+        <p>Activa 2FA en cuentas importantes. Requiere un segundo paso de verificación
+           (código SMS, app authenticator) además de la contraseña.</p>
+      </div>
+    </div>
+  </section>
+
+  <hr class="divisor" />
+
+  <!-- SECCIÓN 3: NAVEGACIÓN SEGURA EN INTERNET -->
+  <section id="navegacion">
+    <h2 class="titulo-seccion">Navegación Segura en <span>Internet</span></h2>
+
+    <div class="ataques-lista">
+      <div class="ataque-item">
+        <h3>Verifica URLs Antes de Hacer Clic</h3>
+        <p class="ataque-tipo">Práctica: Prevención de phishing</p>
+        <p class="ataque-desc">
+          Antes de hacer clic en un enlace, pasa el mouse sobre él para ver la URL real.
+          Busca errores de ortografía en dominio (amaz0n vs amazon). Si algo parece sospechoso, no hagas clic.
+        </p>
+      </div>
+
+      <div class="ataque-item">
+        <h3> Desconfía de Emails Sospechosos</h3>
+        <p class="ataque-tipo">Práctica: Email seguro</p>
+        <p class="ataque-desc">
+          Los bancos NUNCA te piden datos por email. Si recibes un email afirmando ser de tu banco
+          pidiendo contraseña o tarjeta, es un phishing. Dirígete directamente al sitio oficial en lugar
+          de hacer clic en enlaces del email.
+        </p>
+      </div>
+
+      <div class="ataque-item">
+        <h3> Usa Solo HTTPS en Sitios Sensibles</h3>
+        <p class="ataque-tipo">Práctica: Conexión encriptada</p>
+        <p class="ataque-desc">
+          Busca el candado 🔒 y "https://" en la barra de direcciones para sitios de banca, compras
+          o cualquier sitio donde introduzcas contraseñas. HTTP sin la "s" es inseguro.
+        </p>
+      </div>
+
+      <div class="ataque-item">
+        <h3> Actualiza Navegador y Complementos</h3>
+        <p class="ataque-tipo">Práctica: Mantenimiento de seguridad</p>
+        <p class="ataque-desc">
+          Mantén tu navegador (Chrome, Firefox, Safari) actualizado. Las actualizaciones incluyen
+          parches de seguridad que cierran vulnerabilidades. Lo mismo aplica para extensiones y plugins.
+        </p>
+      </div>
+
+      <div class="ataque-item">
+        <h3> Ten Cuidado con Descargas</h3>
+        <p class="ataque-tipo">Práctica: Descarga segura</p>
+        <p class="ataque-desc">
+          Descarga solo de sitios oficiales. Los sitios "gratis" a menudo contienen malware.
+          Si un archivo parece sospechoso (.exe, .bat), analízalo con antivirus antes de abrirlo.
+        </p>
+      </div>
+
+      <div class="ataque-item">
+        <h3> WiFi Público: Mejor Evitar Datos Sensibles</h3>
+        <p class="ataque-tipo">Práctica: Seguridad en movilidad</p>
+        <p class="ataque-desc">
+          En WiFi público, otros pueden interceptar tus datos. Evita hacer transacciones bancarias
+          o acceder a cuentas sensibles. Si debe hacerlo, usa VPN para encriptar tu tráfico.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <hr class="divisor" />
+
+  <!-- SECCIÓN 4: REDES SOCIALES Y PRIVACIDAD -->
+  <section id="redes-sociales">
+    <h2 class="titulo-seccion">Buenas Prácticas en <span>Redes Sociales</span></h2>
+
+    <div class="proteccion-container">
+      <!-- Privacidad -->
+      <div class="proteccion-bloque">
+        <h3>🔒 Privacidad y Control de Datos</h3>
+        <ul class="proteccion-lista">
+          <li>
+            <strong>Configura privacidad al máximo:</strong> Solo amigos pueden ver tus posts.
+          </li>
+          <li>
+            <strong>Limita información personal:</strong> No publiques número de teléfono, dirección, horarios.
+          </li>
+          <li>
+            <strong>Cuidado con geolocalizaciones:</strong> Desactiva ubicación en tiempo real. Los acosadores pueden rastrearte.
+          </li>
+          <li>
+            <strong>Revisa etiquetas:</strong> No dejes que otros te etiqueten en fotos sin control.
+          </li>
+          <li>
+            <strong>Limpia historiales:</strong> Elimina posts antiguos que no quieras que vea tu empleador futuro.
+          </li>
+          <li>
+            <strong>Desactiva rastreo:</strong> En configuración, desactiva que apps te sigan por Internet.
+          </li>
+        </ul>
+      </div>
+
+      <!-- Interacciones -->
+      <div class="proteccion-bloque">
+        <h3>💬 Interacción Responsable</h3>
+        <ul class="proteccion-lista">
+          <li>
+            <strong>No al ciberacoso:</strong> No insultes, amenaces o acoces a otros usuarios.
+          </li>
+          <li>
+            <strong>Verifica antes de compartir:</strong> No propagues fake news ni contenido sin contrastar.
+          </li>
+          <li>
+            <strong>Respeta opiniones diferentes:</strong> Puedes debatir sin ser violento.
+          </li>
+          <li>
+            <strong>No doxxing:</strong> Nunca compartas datos personales de otros (email, dirección, teléfono).
+          </li>
+          <li>
+            <strong>Cuidado con exponer a menores:</strong> No publiques fotos de niños sin consentimiento parental.
+          </li>
+          <li>
+            <strong>Sé consciente de tu huella digital:</strong> Lo que subes puede buscarse y usarse en tu contra.
+          </li>
+        </ul>
+      </div>
+
+      <!-- Consideraciones Personales -->
+      <div class="proteccion-bloque">
+        <h3>⚖️ Bienestar Digital</h3>
+        <ul class="proteccion-lista">
+          <li>
+            <strong>Establece límites de tiempo:</strong> No pases más de 2-3 horas seguidas en redes.
+          </li>
+          <li>
+            <strong>Desactiva notificaciones constantes:</strong> Si recibas notificaciones todo el tiempo, desactívalas.
+          </li>
+          <li>
+            <strong>Evita comparaciones constantes:</strong> Recuerda que en redes vemos solo la vida "perfecta" de otros.
+          </li>
+          <li>
+            <strong>Cuidado con FOMO:</strong> El miedo a perderse (FOMO) puede llevar a adicción digital.
+          </li>
+          <li>
+            <strong>Actividad física:</strong> Alterna tiempo en redes con ejercicio y vida offline.
+          </li>
+          <li>
+            <strong>Educate sobre riesgos:</strong> Aprende sobre grooming, sextortion y otras amenazas online.
+          </li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <hr class="divisor" />
+
+  <!-- SECCIÓN 5: BUENAS PRÁCTICAS EN EL TRABAJO O ESTUDIO -->
+  <section id="trabajo-estudio">
+    <h2 class="titulo-seccion">Buenas Prácticas en <span>Trabajo y Estudio</span></h2>
+
+    <div class="amenazas-grid">
+      <div class="amenaza-card">
+        <span class="amenaza-icono"></span>
+        <h3>Protege Información Confidencial</h3>
+        <p>No compartir documentos sensibles por email sin encriptar.
+           Bloquea tu computadora cuando te vas. No hables de clientes o proyectos en público.</p>
+      </div>
+
+      <div class="amenaza-card">
+        <span class="amenaza-icono"></span>
+        <h3>Cuidado con Archivos Compartidos</h3>
+        <p>Al subir archivos a Google Drive, OneDrive o Dropbox, asegúrate de que
+           solo las personas correctas tengan acceso. Revisa permisos de compartición.</p>
+      </div>
+
+      <div class="amenaza-card">
+        <span class="amenaza-icono"></span>
+        <h3>Usa Dispositivos Autorizados</h3>
+        <p>En entornos de trabajo, usa solo equipos autorizados.
+           No uses computadoras personales para trabajo confidencial.</p>
+      </div>
+
+      <div class="amenaza-card">
+        <span class="amenaza-icono"></span>
+        <h3>Email Profesional Seguro</h3>
+        <p>Usa contraseña fuerte y 2FA en tu email laboral.
+           No reenvijes toda tu información a cuenta personal.</p>
+      </div>
+
+      <div class="amenaza-card">
+        <span class="amenaza-icono"></span>
+        <h3>Reporte de Incidentes</h3>
+        <p>Si ves algo sospechoso (email raro, virus, acceso inusual),
+           repórtalo al departamento de IT. No intentes solucionarlo solo.</p>
+      </div>
+
+      <div class="amenaza-card">
+        <span class="amenaza-icono"></span>
+        <h3>Respeta Derechos de Autor</h3>
+        <p>En proyectos y trabajos, cita fuentes, usa imágenes con licencia,
+           y nunca plagies. La deshonestidad académica tiene consecuencias.</p>
+      </div>
+    </div>
+  </section>
+
+  <hr class="divisor" />
+
+  <!-- SECCIÓN 6: MANTENIMIENTO DEL DISPOSITIVO -->
+  <section id="mantenimiento">
+    <h2 class="titulo-seccion"><span>Mantenimiento</span> de tu Equipo</h2>
+
+    <div class="ataques-lista">
+      <div class="ataque-item">
+        <h3>🔄 Actualiza tu Sistema Operativo</h3>
+        <p class="ataque-tipo">Frecuencia: Cada semana (automático)</p>
+        <p class="ataque-desc">
+          Windows, macOS y Linux lanzan actualizaciones regularmente que parchean vulnerabilidades.
+          Activa actualizaciones automáticas. No las pospongas constantemente.
+        </p>
+      </div>
+
+      <div class="ataque-item">
+        <h3>🛡️ Instala Antivirus Confiable</h3>
+        <p class="ataque-tipo">Herramientas recomendadas</p>
+        <p class="ataque-desc">
+          Windows Defender (incluido en Windows) es bueno. Otras opciones: Avast, Kaspersky, Norton.
+          En Mac y Linux hay menos amenazas pero sigue siendo importante. Mantén antivirus actualizado.
+        </p>
+      </div>
+
+      <div class="ataque-item">
+        <h3>📦 Desinstala Programas no Utilizados</h3>
+        <p class="ataque-tipo">Práctica: Limpieza periódica</p>
+        <p class="ataque-desc">
+          Programas viejos pueden tener vulnerabilidades. Si no los usas, desinstálalos.
+          Menos programas = menos vectores de ataque. Usa panel de control o AppCleaner (Mac).
+        </p>
+      </div>
+
+      <div class="ataque-item">
+        <h3>💾 Realiza Backups Regularmente</h3>
+        <p class="ataque-tipo">Frecuencia: Semanal o diaria si tus datos son críticos</p>
+        <p class="ataque-desc">
+          Guarda copias de tus datos en disco externo o servicio cloud (Google Drive, OneDrive).
+          Si tu computadora se infecta con ransomware, tendrás una copia limpia de tus archivos.
+        </p>
+      </div>
+
+      <div class="ataque-item">
+        <h3>🧹 Limpia tu Disco Duro</h3>
+        <p class="ataque-tipo">Frecuencia: Mensual</p>
+        <p class="ataque-desc">
+          Elimina archivos temporales y basura. Usa herramientas como CCleaner (Windows) o CleanMyMac (Mac).
+          Un disco lleno es más lento y vulnerable. Mantén al menos 20% de espacio libre.
+        </p>
+      </div>
+
+      <div class="ataque-item">
+        <h3>🔍 Escaneo de Malware</h3>
+        <p class="ataque-tipo">Frecuencia: Mensual (o si sospechas infección)</p>
+        <p class="ataque-desc">
+          Ejecuta búsqueda completa con tu antivirus mensualmente. Si sospechas de malware,
+          reinicia en modo seguro y ejecuta un escaneo profundo. Malwarebytes es también una buena opción.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <hr class="divisor" />
+
+  <!-- FOOTER -->
+  <footer>
+    <p class="footer-logo">🛡️ <span>BitWall</span></p>
+    
+    <p class="footer-copy">
+       &copy; 2026 BitWall. 
+    </p>
+  </footer>
+
+  <script>
+    function toggleMenu() {
+      document.getElementById('navMenu').classList.toggle('abierto');
+    }
+    document.querySelectorAll('.nav-links a').forEach(function(link) {
+      link.addEventListener('click', function() {
+        document.getElementById('navMenu').classList.remove('abierto');
+      });
+    });
+  </script>
+</body>
+
+</html>

@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Caso Real</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700;800&family=Nunito:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+
+<body>
+
+  <!-- NAVBAR -->
+  <nav>
+    <a href="index.html" class="nav-logo">🛡️ <span>BitWall</span></a>
+    <button class="nav-toggle" onclick="toggleMenu()">☰</button>
+    <ul class="nav-links" id="navMenu">
+      <li><a href="index.html">Inicio</a></li>
+      <li><a href="seguridad.html">Seguridad</a></li>
+      <li><a href="etica.html">Ética Digital</a></li>
+      <li><a href="practicas.html">Buenas Prácticas</a></li>
+      <li><a href="caso.html" class="active">Caso Real</a></li>
+      <li><a href="multimedia.html">Multimedia</a></li>
+      <li><a href="contacto.html">Contacto</a></li>
+    </ul>
+  </nav>
+
+  <!-- HERO SECTION -->
+  <header class="hero">
+    <div class="hero-content">
+      <span class="hero-badge"> CASO DE ESTUDIO</span>
+      <h1>Análisis de un <em>Ataque Real</em><br>y sus Lecciones</h1>
+      <p class="hero-sub">
+        Descubre cómo ocurrió un ciberataque real, cuáles fueron los errores
+        y qué podemos aprender para protegernos mejor.
+      </p>
+    </div>
+  </header>
+
+  <hr class="divisor" />
+
+  <!-- SECCIÓN 1: INTRODUCCIÓN DEL CASO -->
+  <section id="introduccion-caso">
+    <h2 class="titulo-seccion">El Caso: Empresa TechCorp - <span>Ransomware 2024</span></h2>
+
+    <div class="contenido-seccion">
+      <p>
+        <strong>TechCorp</strong> es una empresa mediana de desarrollo de software con 150 empleados ubicada en Madrid.
+        En marzo de 2024, sufrió un ataque de ransomware que paralizó sus operaciones durante 3 semanas.
+        Este es el análisis detallado de cómo sucedió, qué falló y qué se pudo haber hecho diferente.
+      </p>
+
+      <div class="cards-info">
+        <div class="card-concepto">
+          <h4>📍 Ubicación</h4>
+          <p>Madrid, España</p>
+        </div>
+        <div class="card-concepto">
+          <h4>👥 Tamaño</h4>
+          <p>150 empleados</p>
+        </div>
+        <div class="card-concepto">
+          <h4>💰 Pérdidas</h4>
+          <p>€250,000 approx.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <hr class="divisor" />
+
+  <!-- SECCIÓN 2: CRONOLOGÍA DEL ATAQUE -->
+  <section id="cronologia">
+    <h2 class="titulo-seccion">Cronología del <span>Ataque</span></h2>
+
+    <div class="ataques-lista">
+      <div class="ataque-item">
+        <h3> Semana 1 (del 1 al 3 de marzo)</h3>
+        <p class="ataque-tipo">Fase 1: Reconocimiento y acceso</p>
+        <p class="ataque-desc">
+          Los atacantes lanzan una campaña de phishing contra empleados de TechCorp.
+          Envían emails que parecen ser de IT pidiendo "actualizar credenciales".
+          <strong>María, asistente administrativo, hace clic</strong> en el enlace y entra su usuario/contraseña.
+          Los atacantes ahora tienen acceso a una cuenta válida.
+        </p>
+      </div>
+
+      <div class="ataque-item">
+        <h3> Semana 1 (4 a 7 de marzo)</h3>
+        <p class="ataque-tipo">Fase 2: Movimiento lateral y reconocimiento</p>
+        <p class="ataque-desc">
+          Usando la cuenta comprometida de María, los atacantes acceden a la red interna.
+          Instalan herramientas de movimiento lateral para explorar qué datos hay.
+          Descubren que hay un servidor de bases de datos con información de clientes.
+          <strong>Nadie nota nada</strong> porque la contraseña de María es débil y acceso desde ubicación inusual no estaba vigilado.
+        </p>
+      </div>
+
+      <div class="ataque-item">
+        <h3> Semana 2 (10 de marzo)</h3>
+        <p class="ataque-tipo">Fase 3: Escalada de privilegios</p>
+        <p class="ataque-desc">
+          Los atacantes encuentran credenciales de administrador guardadas en un archivo de texto
+          en la carpeta "Documentos" de una computadora. Usando estas credenciales, logran
+          acceso de administrador a los servidores principales de TechCorp.
+          <strong>Error crítico:</strong> credenciales de admin almacenadas en texto plano.
+        </p>
+      </div>
+
+      <div class="ataque-item">
+        <h3> Semana 2 (12 de marzo)</h3>
+        <p class="ataque-tipo">Fase 4: Despliegue del ransomware</p>
+        <p class="ataque-desc">
+          Con acceso de administrador, los atacantes despliegan el ransomware "LockBit"
+          en los servidores principales. El malware encripta TODOS los archivos en menos de 2 horas.
+          <strong>Descubrimiento a las 8:00 AM</strong> cuando empleados no pueden acceder a archivos.
+          Los servidores muestran un mensaje: "Pague 500,000€ en Bitcoin para recuperar sus datos en 72 horas."
+        </p>
+      </div>
+
+      <div class="ataque-item">
+        <h3> Semana 2 (12 a 15 de marzo)</h3>
+        <p class="ataque-tipo">Fase 5: Impacto y respuesta caótica</p>
+        <p class="ataque-desc">
+          - TechCorp no tiene backups offline funcionales.
+          - Los backup automáticos también fueron encriptados (conectados a la red infectada).
+          - Empleados pueden trabajar parcialmente desde máquinas locales pero pierden colaboración.
+          - Clientes no pueden acceder a servicio en la nube. Comienzan cancelaciones.
+          - TechCorp notifica a autoridades. Se abre investigación penal.
+        </p>
+      </div>
+
+      <div class="ataque-item">
+        <h3> Semana 3 a 6 (16 de marzo - 10 de abril)</h3>
+        <p class="ataque-tipo">Fase 6: Recuperación y lecciones</p>
+        <p class="ataque-desc">
+          - TechCorp contrata forensía por €80,000 para limpiar malware.
+          - Restauran desde backups antiguos que tenían (perdicencia de 1 semana de datos).
+          - Pierden €250,000 en pagos de recuperación, pérdida de clientes y tiempo de parada.
+          - Implementan nuevas medidas de seguridad.
+          - Reputación dañada: 3 clientes grandes cancelan contratos.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <hr class="divisor" />
+
+  <!-- SECCIÓN 3: ANÁLISIS DE FALLOS -->
+  <section id="fallos">
+    <h2 class="titulo-seccion">Fallos de <span>Seguridad</span> Identificados</h2>
+
+    <div class="amenazas-grid">
+      <div class="amenaza-card">
+        <span class="amenaza-icono">❌</span>
+        <h3>Falta de Capacitación en Phishing</h3>
+        <p>Los empleados no fueron entrenados para identificar emails de phishing.
+           María no sabía que IT nunca pide contraseñas por email.</p>
+      </div>
+
+      <div class="amenaza-card">
+        <span class="amenaza-icono"></span>
+        <h3>Contraseña Débil</h3>
+        <p>La contraseña de María era "maria123". Con acceso débil, nadie vigilaba
+           intentos de acceso desde ubicaciones inusuales.</p>
+      </div>
+
+      <div class="amenaza-card">
+        <span class="amenaza-icono"></span>
+        <h3>Sin Autenticación Multifactor</h3>
+        <p>No había 2FA. Si María hubiera tenido 2FA, aunque el atacante tuviera su contraseña,
+           no podría acceder sin su teléfono.</p>
+      </div>
+
+      <div class="amenaza-card">
+        <span class="amenaza-icono"></span>
+        <h3>Credenciales Guardadas en Texto Plano</h3>
+        <p>Credenciales de admin en archivo de texto. Debían estar en gestor de contraseñas
+           encriptado o HSM (Hardware Security Module).</p>
+      </div>
+
+      <div class="amenaza-card">
+        <span class="amenaza-icono"></span>
+        <h3>Falta de Monitoreo de Red</h3>
+        <p>Nadie vigilaba aún cuando un usuario accedía desde una IP extranjera o a una hora rara.
+           Un SIEM (Security Information Event Management) lo hubiera detectado.</p>
+      </div>
+
+      <div class="amenaza-card">
+        <span class="amenaza-icono"></span>
+        <h3>Backups Deficientes</h3>
+        <p>Los backups estaban conectados a la misma red. Si la red se infecta, los backups también.
+           Backups offline o en nube desconectada hubieran salvado los datos.</p>
+      </div>
+    </div>
+  </section>
+
+  <hr class="divisor" />
+
+  <!-- SECCIÓN 4: LECCIONES APRENDIDAS -->
+  <section id="lecciones">
+    <h2 class="titulo-seccion">Lecciones y <span>Recomendaciones</span></h2>
+
+    <div class="proteccion-container">
+      <!-- Lo que Debieron Hacer -->
+      <div class="proteccion-bloque">
+        <h3>✅ Lo Que Debieron Hacer</h3>
+        <ul class="proteccion-lista">
+          <li>
+            <strong>Entrenar a empleados:</strong> Simulacros de phishing mensuales para que aprendan a identificarlos.
+          </li>
+          <li>
+            <strong>Implementar 2FA/MFA:</strong> Especialmente para cuentas con acceso a datos sensibles.
+          </li>
+          <li>
+            <strong>Usar gestor de contraseñas:</strong> LastPass, 1Password o similar para guardar credenciales seguramente.
+          </li>
+          <li>
+            <strong>Monitoreo 24/7:</strong> SIEM o al menos alertas de acceso inusual.
+          </li>
+          <li>
+            <strong>Backups robustos:</strong> 3-2-1 (3 copias, en 2 medios diferentes, 1 offline).
+          </li>
+          <li>
+            <strong>Segmentación de red:</strong> Datos críticos en red separada con firewalls internos.
+          </li>
+        </ul>
+      </div>
+
+      <!-- Costo de Prevención vs Ataque -->
+      <div class="proteccion-bloque">
+        <h3>💰 Análisis de Costo-Beneficio</h3>
+        <ul class="proteccion-lista">
+          <li>
+            <strong>Capacitación anual:</strong> €5,000 (previene 70% de ataques phishing).
+          </li>
+          <li>
+            <strong>2FA/MFA:</strong> €10,000 implementación + €2,000 anuales.
+          </li>
+          <li>
+            <strong>Gestor de contraseñas empresarial:</strong> €3,000 anuales.
+          </li>
+          <li>
+            <strong>SIEM básico:</strong> €15,000 anuales.
+          </li>
+          <li>
+            <strong>Backups en nube:</strong> €8,000 anuales.
+          </li>
+          <li>
+            <strong>Total inversión anual en prevención:</strong> €43,000.
+          </li>
+          <li class="costo-ataque">
+            <strong>Costo del ataque a TechCorp:</strong> €250,000 + daño reputacional.
+          </li>
+        </ul>
+      </div>
+
+      <!-- Ahora y en el Futuro -->
+      <div class="proteccion-bloque">
+        <h3>🚀 Plan de TechCorp Post-Ataque</h3>
+        <ul class="proteccion-lista">
+          <li>
+            <strong>Mes 1:</strong> Capacitación urgente, implementación de 2FA, auditoría completa.
+          </li>
+          <li>
+            <strong>Mes 2-3:</strong> Desplegar SIEM, implementar backups 3-2-1, segmentación de red.
+          </li>
+          <li>
+            <strong>Mes 4-6:</strong> Audit de código, penetration testing, plan de respuesta a incidentes.
+          </li>
+          <li>
+            <strong>Continuo:</strong> Simulacros trimestrales, revisión de seguridad, actualizaciones.
+          </li>
+          <li>
+            <strong>Resultado:</strong> Después de 6 meses, TechCorp recupera confianza de clientes.
+          </li>
+          <li>
+            <strong>Inversión total post-ataque:</strong> €150,000 en infraestructura + €43,000 anual.
+          </li>
+        </ul>
+      </div>
+    </div>
+
+   
+  </section>
+
+  <hr class="divisor" />
+
+  <!-- FOOTER -->
+  <footer>
+    <p class="footer-logo">🛡️ <span>BitWall</span></p>
+    
+    <p class="footer-copy">
+     &copy; 2026 BitWall. 
+    </p>
+  </footer>
+
+  <script>
+    function toggleMenu() {
+      document.getElementById('navMenu').classList.toggle('abierto');
+    }
+    document.querySelectorAll('.nav-links a').forEach(function(link) {
+      link.addEventListener('click', function() {
+        document.getElementById('navMenu').classList.remove('abierto');
+      });
+    });
+  </script>
+</body>
+
+</html>
