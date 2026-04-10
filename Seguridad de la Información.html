@@ -1,0 +1,458 @@
+<!DOCTYPE html>
+<!-- saved from url=(0036)http://127.0.0.1:5500/seguridad.html -->
+<html lang="es"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Seguridad de la Información</title>
+  
+  
+<link href="./Seguridad de la Información_files/css2" rel="stylesheet"><link rel="stylesheet" href="./Seguridad de la Información_files/styles.css"></head>
+
+<body class="seguridad-page">
+  <canvas id="matrix" width="964" height="909" style="width: 964px; height: 909px;"></canvas>
+
+  <!-- NAVBAR -->
+  <nav>
+    <a href="http://127.0.0.1:5500/index.html" class="nav-logo">🛡️ <span>BitWall</span></a>
+    <button class="nav-toggle" onclick="toggleMenu()">☰</button>
+    <ul class="nav-links" id="navMenu">
+      <li><a href="http://127.0.0.1:5500/index.html">Inicio</a></li>
+      <li><a href="http://127.0.0.1:5500/seguridad.html" class="active">Seguridad</a></li>
+      <li><a href="http://127.0.0.1:5500/etica.html">Ética Digital</a></li>
+      <li><a href="http://127.0.0.1:5500/practicas.html">Buenas Prácticas</a></li>
+      <li><a href="http://127.0.0.1:5500/caso.html">Caso Real</a></li>
+      <li><a href="http://127.0.0.1:5500/multimedia.html">Multimedia</a></li>
+      <li><a href="http://127.0.0.1:5500/contacto.html">Contacto</a></li>
+    </ul>
+  </nav>
+
+  <!-- HERO SECTION -->
+  <header class="hero">
+    <div class="hero-content">
+      <span class="hero-badge"> SEGURIDAD DE LA INFORMACIÓN</span>
+      <h1>Protege tu Información<br>en el <em>Mundo Digital</em></h1>
+      <p class="hero-sub">
+        Comprende las amenazas, identifica los riesgos reales
+        y aprende a defenderte con medidas efectivas de protección.
+      </p>
+    </div>
+  </header>
+
+
+  <!-- SECCIÓN 1: QUÉ ES LA SEGURIDAD DE INFORMACIÓN -->
+  <section id="que-es">
+    <h2 class="titulo-seccion">¿Qué es la Seguridad de <span>Información</span>?</h2>
+
+    <div class="contenido-seccion">
+      <p>
+        La <strong>seguridad de la información</strong> es el conjunto de procedimientos, herramientas y medidas preventivas y reactivas diseñados para proteger la información confidencial de una organización frente al acceso no autorizado, uso indebido, alteración, interrupción o destrucción, abarcando tanto formatos digitales como físicos.
+      </p>
+
+      <div class="cards-info">
+        <div class="card-concepto">
+          <h4> Confidencialidad</h4>
+          <p>Solo personas autorizadas pueden acceder a la información.</p>
+        </div>
+        <div class="card-concepto">
+          <h4> Integridad</h4>
+          <p>Los datos no pueden ser modificados sin autorización.</p>
+        </div>
+        <div class="card-concepto">
+          <h4> Disponibilidad</h4>
+          <p>La información debe estar accesible cuando se necesite.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <hr class="divisor">
+
+  <!-- SECCIÓN 2: TIPOS DE AMENAZAS -->
+  <section id="amenazas" class="section-fondo">
+    <h2 class="titulo-seccion">Tipos de <span>Amenazas</span> Digitales</h2>
+
+    <div class="amenazas-grid">
+      <div class="amenaza-card">
+        <div> 
+          <img src="./Seguridad de la Información_files/malware-download-540x270.webp" alt="Icono de Malware" class="amenaza-img"></div>
+
+        <div>
+          <h3>Malware</h3>
+        <p>Software malicioso que infecta tu dispositivo (virus, gusanos, troyanos) para robar datos o dañar el sistema.</p>
+      </div>
+      </div>
+
+      <div class="amenaza-card">
+        <div>
+          <img src="./Seguridad de la Información_files/360_F_65570619_n8bfOMcESUNOCSFxCoAxxZnm3vExaXMD.webp" alt="Icono de Phishing" class="amenaza-img"></div>
+        <div>
+          <h3>Phishing</h3>
+        <p>Intentos de engañarte fingiendo ser una empresa confiable para que
+           reveles datos personales o credenciales.</p>
+          </div>
+      </div>
+
+      <div class="amenaza-card">
+        <div>
+          <img src="./Seguridad de la Información_files/access_denied.webp" alt="Icono de Acceso No Autorizado" class="amenaza-img">
+        </div>
+          <div>
+        <h3>Acceso No Autorizado</h3>
+        <p>Personas que ingresan a sistemas sin permiso usando contraseñas débiles
+           o explotando vulnerabilidades en el software.</p>
+          </div>
+      </div>
+
+      <div class="amenaza-card">
+      <div class="video-interactivo">
+        <video autoplay="" muted="" loop="" playsinline="" src="Videos_TICS/istockphoto-1269930110-640_adpp_is.mp4"></video>
+      </div>
+
+        <div>
+          <h3>Ransomware</h3>
+        <p>Software que encripta tus datos y te pide un "rescate" para recuperarlos.
+           Es muy usado en ataques a empresas.</p></div>
+      </div>
+
+      <div class="amenaza-card">
+        <div><img src="./Seguridad de la Información_files/64-ddos-saldirilari.webp" alt="Icono de DDoS" class="amenaza-img"></div>
+        <div>
+          <h3>DDoS (Denegación de Servicio)</h3>
+          <p>Un ataque DDoS (Denegación de Servicio Distribuido) es un intento malicioso de interrumpir el tráfico normal de un servidor, servicio o red inundándolo con un exceso de tráfico procedente de múltiples fuentes simultáneamente.</p>
+        </div>
+      </div>
+
+      <div class="amenaza-card">
+        <div><img src="./Seguridad de la Información_files/ingenieria-social.webp" alt="Icono de Ingeniería Social" class="amenaza-img"></div>
+        <div>
+          <h3>Ingeniería Social</h3>
+          <p>Se manipula psicológicamente a las personas para que revelen información
+             sensible o realicen acciones inseguras.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <hr class="divisor">
+
+  <!-- SECCIÓN 3: EJEMPLOS DE ATAQUES REALES -->
+  <section id="ataques-reales">
+    <h2 class="titulo-seccion">Ejemplos de <span>Ataques Reales</span></h2>
+
+    <div class="ataques-lista">
+      <div class="ataque-item">
+        <h3>📅 2024: Ataque a bases de datos de hospitales</h3>
+        <p class="ataque-tipo">Tipo: Ransomware + Acceso no autorizado</p>
+        <p class="ataque-desc">
+          Hospitales en varios países fueron víctimas de ataques ransomware que
+          encriptaron historiales médicos. Los atacantes exigieron millones en
+          rescate. Resultado: pacientes no podían acceder a registros críticos.
+        </p>
+      </div>
+
+      <div class="ataque-item">
+        <h3>📅 2023: Filtración de datos en plataforma de streaming</h3>
+        <p class="ataque-tipo">Tipo: Violación de seguridad + Robo de credenciales</p>
+        <p class="ataque-desc">
+          Hackers accedieron a miles de cuentas de usuarios robando nombres,
+          correos y hashes de contraseñas. Los atacantes vendieron los datos
+          en la dark web.
+        </p>
+      </div>
+
+      <div class="ataque-item">
+        <h3>📅 2022: Campaña de phishing contra empresas financieras</h3>
+        <p class="ataque-tipo">Tipo: Phishing + Ingeniería Social</p>
+        <p class="ataque-desc">
+          Correos falsos imitaban bancos conocidos pidiendo actualizar datos
+          bancarios. Miles de usuarios cayeron en la trampa y perdieron dinero
+          o vieron comprometidas sus cuentas.
+        </p>
+      </div>
+
+      <div class="ataque-item">
+        <h3>📅 2021: Ataque a cadena de suministro de software</h3>
+        <p class="ataque-tipo">Tipo: Malware distribuido a través de software legítimo</p>
+        <p class="ataque-desc">
+          Una herramienta popular fue comprometida e inyectada con malware.
+          Cuando miles de empresas la actualizaron, quedaron vulnerables
+          permitiendo robo masivo de información.
+        </p>
+      </div>
+
+      <div class="ataque-item">
+        <h3>📅 2020: DDoS masivo contra infraestructura crítica</h3>
+        <p class="ataque-tipo">Tipo: Ataque DDoS coordinado</p>
+        <p class="ataque-desc">
+          Servicios de internet, energía y telecomunicaciones fueron atacados
+          simultáneamente. Millones de usuarios perdieron conexión durante horas.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <hr class="divisor">
+
+  <!-- SECCIÓN 4: MEDIDAS DE PROTECCIÓN -->
+  <section id="medidas-proteccion">
+    <h2 class="titulo-seccion">Medidas de <span>Protección</span> Efectivas</h2>
+
+    <div class="proteccion-container">
+      <!-- Medidas Técnicas -->
+      <div class="proteccion-bloque">
+        <h3>Medidas Técnicas</h3>
+        <ul class="proteccion-lista">
+          <li>
+            <strong>Firewall:</strong> Controla quién puede acceder a tu red.
+          </li>
+          <li>
+            <strong>Antivirus y Antimalware:</strong> Detecta y elimina software malicioso.
+          </li>
+          <li>
+            <strong>Encriptación:</strong> Convierte tus datos en código imposible de leer sin clave.
+          </li>
+          <li>
+            <strong>Actualizaciones:</strong> Parchea vulnerabilidades en tu SO y aplicaciones.
+          </li>
+          <li>
+            <strong>Backups:</strong> Guarda copias de tus datos en caso de pérdida.
+          </li>
+          <li>
+            <strong>Autenticación de dos factores (2FA):</strong> Añade una capa extra de seguridad.
+          </li>
+        </ul>
+      </div>
+
+      <!-- Medidas Administrativas -->
+      <div class="proteccion-bloque">
+        <h3> Medidas Administrativas</h3>
+        <ul class="proteccion-lista">
+          <li>
+            <strong>Políticas de seguridad:</strong> Establece reglas claras sobre cómo proteger datos.
+          </li>
+          <li>
+            <strong>Control de acceso:</strong> Solo personas autorizadas pueden acceder a info sensible.
+          </li>
+          <li>
+            <strong>Auditorías:</strong> Revisa regularmente quién accedió a qué y cuándo.
+          </li>
+          <li>
+            <strong>Capacitación:</strong> Entrena a empleados sobre prácticas seguras.
+          </li>
+          <li>
+            <strong>Planes de respuesta:</strong> Ten un plan si ocurre un ataque.
+          </li>
+        </ul>
+      </div>
+
+      <!-- Medidas de Comportamiento -->
+      <div class="proteccion-bloque">
+        <h3>👤 Medidas de Comportamiento</h3>
+        <ul class="proteccion-lista">
+          <li>
+            <strong>Contraseñas fuertes:</strong> Usa mínimo 12 caracteres con números y símbolos.
+          </li>
+          <li>
+            <strong>Vigilancia:</strong> No compartas contraseñas ni información sensible.
+          </li>
+          <li>
+            <strong>Verificación:</strong> Verifica enlaces antes de hacer clic (especialmente en emails).
+          </li>
+          <li>
+            <strong>Privacidad en redes:</strong> Limita quién puede ver tu información en redes sociales.
+          </li>
+          <li>
+            <strong>WiFi seguro:</strong> Evita WiFi público para transacciones sensibles.
+          </li>
+          <li>
+            <strong>Conciencia:</strong> Mantente informado sobre nuevas amenazas.
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- CTA -->
+    <div class="banner-proteccion">
+      <h4>¡Recuerda!</h4>
+      <p>La mejor protección combina <strong>tecnología + hábitos seguros + actualizaciones constantes</strong>.
+         No existe seguridad 100%, pero sí puedes reducir significativamente tu riesgo.</p>
+    </div>
+  </section>
+
+  <!-- SECCIÓN 5: AMENAZAS EN SISTEMAS DE INTELIGENCIA ARTIFICIAL -->
+  <section id="amenazas-ia">
+    <h2 class="titulo-seccion">Amenazas en sistemas de <span>Inteligencia Artificial</span></h2>
+
+    <div class="contenido-seccion">
+      <p>
+        Los sistemas de inteligencia artificial (IA) enfrentan diversas amenazas que pueden comprometer su funcionamiento y seguridad. Entre las principales se incluyen los ataques adversarios, donde se manipulan las entradas para engañar al modelo; el envenenamiento de datos, que altera los conjuntos de entrenamiento para introducir sesgos o errores; y los riesgos de privacidad, como la inferencia de datos sensibles a partir de modelos entrenados.
+      </p>
+
+      <p>
+        Además, la dependencia excesiva de la IA puede llevar a vulnerabilidades sistémicas, donde un fallo en el modelo afecta múltiples aplicaciones. Es crucial implementar medidas como la verificación de integridad de datos, el uso de técnicas de defensa contra ataques adversarios y la auditoría continua de los modelos de IA.
+      </p>
+    </div>
+  </section>
+
+  <hr class="divisor">
+
+  <!-- SECCIÓN 6: DESAFIOS DE SEGURIDAD EN ENTORNOS DE BIG DATA -->
+  <section id="desafios-bigdata">
+    <h2 class="titulo-seccion">Desafios de seguridad en entornos de <span>Big Data</span></h2>
+
+    <div class="contenido-seccion">
+      <p>
+        En entornos de Big Data, la seguridad se enfrenta a desafíos únicos debido al volumen masivo de datos. La confidencialidad y la integridad son críticas, ya que los datos sensibles pueden ser expuestos a través de brechas o accesos no autorizados. Los ataques de inyección de datos y la manipulación de información durante el procesamiento representan riesgos significativos.
+      </p>
+
+      <p>
+        Otro desafío es la gestión de permisos en sistemas distribuidos, donde múltiples usuarios acceden a los datos. Se requieren protocolos robustos de encriptación, controles de acceso basados en roles y monitoreo continuo para detectar anomalías. La compliance con regulaciones como GDPR o HIPAA es esencial para evitar sanciones y proteger la privacidad.
+      </p>
+    </div>
+  </section>
+
+  <hr class="divisor">
+
+  <!-- SECCIÓN 7: RIESGOS Y VULNERABILIDADES EN SISTEMAS BLOCKCHAIN -->
+  <section id="riesgos-blockchain">
+    <h2 class="titulo-seccion">Riesgos y vulnerabilidades en sistemas <span>Blockchain</span></h2>
+
+    <div class="contenido-seccion">
+      <p>
+        Aunque la blockchain ofrece seguridad inherente a través de la descentralización, presenta vulnerabilidades como los ataques del 51%, donde un actor controla la mayoría de la potencia de hash para alterar transacciones. Los contratos inteligentes pueden tener bugs que permitan exploits, como el robo de fondos o la manipulación de lógica.
+      </p>
+
+      <p>
+        La privacidad es otro riesgo, ya que las transacciones son públicas, permitiendo el rastreo de actividades. Ataques de red, como Sybil o eclipse, pueden aislar nodos. Para mitigar estos riesgos, se emplean técnicas como proof-of-stake, auditorías de código y encriptación avanzada.
+      </p>
+    </div>
+  </section>
+
+  <hr class="divisor">
+
+  <!-- SECCIÓN 8: SEGURIDAD DE INTERNET DE LAS COSAS IOT -->
+  <section id="seguridad-iot">
+    <h2 class="titulo-seccion">Seguridad de Internet de las cosas <span>IoT</span></h2>
+
+    <div class="contenido-seccion">
+      <p>
+        Los dispositivos IoT son propensos a vulnerabilidades debido a su naturaleza conectada y a menudo limitada en recursos. Ataques comunes incluyen el acceso no autorizado a través de contraseñas predeterminadas, inyección de malware en firmware y ataques de denegación de servicio distribuidos (DDoS) utilizando botnets de dispositivos IoT.
+      </p>
+
+      <p>
+        La falta de actualizaciones de seguridad y la heterogeneidad de protocolos aumentan los riesgos. Para proteger los sistemas IoT, es necesario implementar autenticación fuerte, segmentación de red, encriptación de comunicaciones y monitoreo continuo. La educación de usuarios y fabricantes sobre mejores prácticas es fundamental.
+      </p>
+    </div>
+  </section>
+
+  <hr class="divisor">
+
+  <!-- FOOTER -->
+  <footer>
+    <p class="footer-logo">🛡️ <span>BitWall</span></p>
+    <ul class="footer-links">
+    <p class="footer-copy">
+      © 2026 BitWall. 
+    </p>
+  </ul></footer>
+
+  <script>
+    function toggleMenu() {
+      document.getElementById('navMenu').classList.toggle('abierto');
+    }
+    document.querySelectorAll('.nav-links a').forEach(function(link) {
+      link.addEventListener('click', function() {
+        document.getElementById('navMenu').classList.remove('abierto');
+      });
+    });
+  </script>
+
+  <script>
+const canvas = document.getElementById('matrix');
+const context = canvas.getContext('2d');
+const fontSize = 18;
+const bits = '01';
+let columns = 0;
+let deviceRatio = window.devicePixelRatio || 1;
+const rainDrops = [];
+
+const resizeCanvas = () => {
+  deviceRatio = window.devicePixelRatio || 1;
+  canvas.width = window.innerWidth * deviceRatio;
+  canvas.height = window.innerHeight * deviceRatio;
+  canvas.style.width = `${window.innerWidth}px`;
+  canvas.style.height = `${window.innerHeight}px`;
+  context.setTransform(deviceRatio, 0, 0, deviceRatio, 0, 0);
+  columns = Math.floor(window.innerWidth / fontSize);
+  rainDrops.length = columns;
+  for (let i = 0; i < columns; i++) {
+    if (rainDrops[i] === undefined) rainDrops[i] = 1;
+  }
+};
+
+resizeCanvas();
+window.addEventListener('resize', resizeCanvas);
+
+const draw = () => {
+  context.fillStyle = 'rgba(0, 0, 0, 0.07)';
+  context.fillRect(0, 0, window.innerWidth, window.innerHeight);
+
+  for (let i = 0; i < columns; i++) {
+    const text = bits.charAt(Math.floor(Math.random() * bits.length));
+    const x = i * fontSize;
+    const y = rainDrops[i] * fontSize;
+
+    context.fillStyle = '#39ff14';
+    context.font = `${fontSize}px Courier New, monospace`;
+    context.fillText(text, x, y);
+
+    if (y > window.innerHeight && Math.random() > 0.975) {
+      rainDrops[i] = 0;
+    }
+    rainDrops[i]++;
+  }
+};
+
+setInterval(draw, 40);
+</script>
+
+<!-- Code injected by live-server -->
+<script>
+	// <![CDATA[  <-- For SVG support
+	if ('WebSocket' in window) {
+		(function () {
+			function refreshCSS() {
+				var sheets = [].slice.call(document.getElementsByTagName("link"));
+				var head = document.getElementsByTagName("head")[0];
+				for (var i = 0; i < sheets.length; ++i) {
+					var elem = sheets[i];
+					var parent = elem.parentElement || head;
+					parent.removeChild(elem);
+					var rel = elem.rel;
+					if (elem.href && typeof rel != "string" || rel.length == 0 || rel.toLowerCase() == "stylesheet") {
+						var url = elem.href.replace(/(&|\?)_cacheOverride=\d+/, '');
+						elem.href = url + (url.indexOf('?') >= 0 ? '&' : '?') + '_cacheOverride=' + (new Date().valueOf());
+					}
+					parent.appendChild(elem);
+				}
+			}
+			var protocol = window.location.protocol === 'http:' ? 'ws://' : 'wss://';
+			var address = protocol + window.location.host + window.location.pathname + '/ws';
+			var socket = new WebSocket(address);
+			socket.onmessage = function (msg) {
+				if (msg.data == 'reload') window.location.reload();
+				else if (msg.data == 'refreshcss') refreshCSS();
+			};
+			if (sessionStorage && !sessionStorage.getItem('IsThisFirstTime_Log_From_LiveServer')) {
+				console.log('Live reload enabled.');
+				sessionStorage.setItem('IsThisFirstTime_Log_From_LiveServer', true);
+			}
+		})();
+	}
+	else {
+		console.error('Upgrade your browser. This Browser is NOT supported WebSocket for Live-Reloading.');
+	}
+	// ]]>
+</script>
+
+</body></html>
